@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Salsas El Molcajete</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.jpeg" type="image/jpeg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Courgette&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../assets/images/logo.jpeg" alt="El Molcajete Logo" height="40" style="border-radius: 50%;">
+                <span class="ms-2">Salsas El Molcajete</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="foda.html">FODA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estrategias.html">Estrategias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendario.html">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4">Contáctanos</h1>
+            <p class="lead">Estamos para responder tus dudas y atender tus comentarios</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <h2 class="artesanal-font mb-4">Información de Contacto</h2>
+                    <div class="contact-info mb-4 p-4 bg-light rounded">
+                        <div class="text-center">
+                            <i class="fas fa-map-marker-alt contact-info-icon"></i>
+                            <h4>Dirección</h4>
+                            <p>Papantla de Olarte, Veracruz, MX</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info mb-4 p-4 bg-light rounded">
+                        <div class="text-center">
+                            <i class="fas fa-phone contact-info-icon"></i>
+                            <h4>Teléfono</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info mb-4 p-4 bg-light rounded">
+                        <div class="text-center">
+                            <i class="fas fa-envelope contact-info-icon"></i>
+                            <h4>Correo Electrónico</h4>
+                            <p>info@salsaselmolcajete.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info p-4 bg-light rounded">
+                        <div class="text-center">
+                            <i class="fas fa-clock contact-info-icon"></i>
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Viernes: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-7">
+                    <div class="contact-form-container">
+                        <h2 class="artesanal-font mb-4">Envíanos un Mensaje</h2>
+                        <div id="formAlert"></div>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Asunto</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Asunto del mensaje">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Tu mensaje aquí..."></textarea>
+                            </div>
+                            
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                                <label class="form-check-label" for="privacyPolicy">
+                                    Acepto la política de privacidad y el tratamiento de mis datos personales
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h3 class="artesanal-font mb-4">Síguenos en Redes Sociales</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Salsas El Molcajete</h5>
+                    <p>Sabores auténticos de Veracruz<br>Hechos con amor y tradición</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="foda.html">FODA</a></li>
+                        <li><a href="estrategias.html">Estrategias</a></li>
+                        <li><a href="calendario.html">Calendario</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Veracruz, México</li>
+                        <li><i class="fas fa-phone me-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@salsaselmolcajete.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p class="small">© 2025 Salsas El Molcajete. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
